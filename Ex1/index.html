@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/code.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <title>My Kitchen</title>
+</head>
+<body onload="start()">
+    <h1>Dishes</h1>
+    <div id="addButtons">
+        <button onclick="addRecipe()">
+            new Recipe
+        </button>
+        <button onclick="addIngredient()">
+            new Ingredient
+        </button>
+    </div>
+    <div id="globalForm"></div>
+    <div id="main"></div>
+    <div id="popupModal" class="modal">
+        <div class="modal-content">
+            <span class="close">×</span>
+            <h1>ingredients details</h1>
+            <div id="popupElements"></div>
+        </div>
+    </div>
+</body>
+</html>
