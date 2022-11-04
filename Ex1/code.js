@@ -14,9 +14,9 @@ class Ingredient{
     render = () => {
         let str = "";
         str = `<div id="item${this.id}"><p>ingredient details: </p>
-                <img src="${this.image}" alt="${this.name} picture">
+                <img src="${this.image}" alt="${this.name} picture"><br>
                 <span>${this.name} </span>
-                <span>calories: ${this.calories} </span></div>`;
+                <p>calories: ${this.calories} </p></div>`;
         return str;
     }
 }
@@ -103,7 +103,7 @@ const closeForm = () => {
 const createIngredient = () => {
   const name = $("#IngredientName").val();
   const image = $("#IngredientImage").val();
-  const calories = $("#IngredientCalories").val();
+  const calories = parseInt($("#IngredientCalories").val());
 
   if(name == "" || image == "" || calories == ""){
     $("#alert").css("display", "block");

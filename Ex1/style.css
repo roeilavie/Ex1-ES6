@@ -48,6 +48,10 @@ img {
     max-width: -webkit-fill-available;
 }
 
+label img{
+    height: 120px;
+}
+
 button {
     font: 1em 'Open Sans', sans-serif;
     cursor: pointer;
@@ -85,8 +89,8 @@ body, button {
     #formGrid {
         display: -ms-grid;
         display: grid;
-        -ms-grid-columns: 150px;
-        grid-template-columns: 150px;
+        -ms-grid-columns: 180px;
+        grid-template-columns: 180px;
         gap: 5px;
         -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -100,8 +104,8 @@ body, button {
     #formGrid {
         display: -ms-grid;
         display: grid;
-        -ms-grid-columns: 150px 150px 150px;
-        grid-template-columns: 150px 150px 150px;
+        -ms-grid-columns: 180px 180px 180px;
+        grid-template-columns: 180px 180px 180px;
         gap: 5px;
         -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -163,7 +167,8 @@ body, button {
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    border-radius: 1%;
+    width: 60%;
 }
 
 .close {
